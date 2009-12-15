@@ -4,7 +4,6 @@ require "extlib"
 require "dm-sweatshop"
 require "context"
 require "pending"
-
 require "integrity"
 require "fixtures"
 

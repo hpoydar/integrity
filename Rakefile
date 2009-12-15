@@ -1,5 +1,6 @@
 require "rake/testtask"
 require "rake/clean"
+require "vendor/gems/environment"
 
 desc "Default: run all tests"
 task :default => :test

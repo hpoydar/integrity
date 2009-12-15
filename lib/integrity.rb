@@ -1,4 +1,5 @@
 require "addressable/uri"
+require "chronic_duration"
 require "sinatra/base"
 require "sinatra/url_for"
 require "sinatra/authorization"

@@ -25,10 +25,10 @@ class HomepageTest < Test::Unit::AcceptanceTestCase
 
     visit "/"
 
-    assert_have_tag("li[@class~=success]",  :content => "successfully")
-    assert_have_tag("li[@class~=failed]",   :content => "and failed")
+    assert_have_tag("li[@class~=success]",  :content => "successfully in 2m")
+    assert_have_tag("li[@class~=failed]",   :content => "and failed in 2m")
     assert_have_tag("li[@class~=blank]",    :content => "Never built yet")
-    assert_have_tag("li[@class~=building]", :content => "Building!")
+    assert_have_tag("li[@class~=building]", :content => "Building! Started at")
   end
 
   scenario "a user clicking through a link on the home page for a public project arrives at the project page" do

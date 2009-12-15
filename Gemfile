@@ -1,4 +1,5 @@
 source "http://gemcutter.org"
+gem "chronic_duration", "0.8.0"
 gem "dm-core", "0.10.1"
 gem "dm-timestamps", "0.10.1"
 gem "dm-types", "0.10.1"

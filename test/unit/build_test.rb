@@ -37,6 +37,11 @@ class BuildTest < Test::Unit::TestCase
     assert_equal "This commit hasn't been built yet",
       Build.gen(:pending).human_status
   end
+  
+  it "has a human readable duration" do
+    assert_match '2m',
+      Build.gen(:successful).human_duration
+  end 
 
   it "finds pending builds" do
     3.of{Build.gen(:pending)}

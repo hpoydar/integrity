@@ -53,6 +53,10 @@ module Integrity
     def human_status
       last_build && last_build.human_status
     end
+    
+    def human_duration
+      last_build && last_build.human_duration
+    end
 
     def public=(flag)
       attribute_set(:public, case flag
